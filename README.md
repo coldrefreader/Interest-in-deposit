@@ -1,3 +1,3 @@
-# Interest-in-deposit
+# List of Projects
 
-Includes 3 variables and the formula for calculating interest.
+A list of my projects of beginner level in Python.
