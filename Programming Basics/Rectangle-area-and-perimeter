@@ -1,0 +1,14 @@
+import math
+
+x1 = float(input("X1: "))
+y1 = float(input("Y1: "))
+x2 = float(input("X2: "))
+y2 = float(input("Y2: "))
+
+a = abs(x1-x2)
+b = abs(y1-y2)
+
+area = a*b
+print("Area: ", math.floor(area))
+perimeter = 2 * (a+b)
+print("Perimeter: ", perimeter)
