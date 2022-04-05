@@ -1,3 +1,3 @@
 # List of Projects
 
-A list of my projects of beginner level in Python.
+A list of my projects at beginner level in Python.
