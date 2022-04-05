@@ -1,0 +1,9 @@
+deposit = float(input())
+months = int(input())
+interest = float(input())
+
+sum_of_all = deposit + months * ((deposit * (interest/100)) / 12)
+
+# Calculates the interest accrued over the months
+
+print(sum_of_all)
