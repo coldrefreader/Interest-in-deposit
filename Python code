@@ -1,9 +1,10 @@
-deposit = float(input())
-months = int(input())
-interest = float(input())
+deposit = float(input("What is the deposit: "))
+months = int(input("For how many months: "))
+interest = float(input("With an interest rate of: "))
 
 sum_of_all = deposit + months * ((deposit * (interest/100)) / 12)
 
 # Calculates the interest accrued over the months
 
-print(sum_of_all)
+print("The result will be: ", str(sum_of_all))
+
