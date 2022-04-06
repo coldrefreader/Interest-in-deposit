@@ -1,0 +1,21 @@
+# An assignment to calculate the number of working bureaus in a study hall
+
+w = float(input())    # Width of hall
+h = float(input())    # Height of hall
+
+w_to_cm = w*100       # Width in centimeters
+h_to_cm = h*100       # Height in centimeters
+
+rows = w_to_cm//120   # How many rows are there, each taking 120 centimeters
+
+h_to_cm -= 100        # Subtracting 100 from height to account for a corridor
+
+
+bureaus_in_row = h_to_cm//70
+# How many bureaus in every row, each taking 70 centimeters
+
+all_bureaus = rows*bureaus_in_row - 3
+# All bureaus minus the space needed for entrance and teacher's podium
+
+
+print(all_bureaus)
