@@ -1,0 +1,18 @@
+import math
+
+figure = input("Choose shape: 'square', 'rectangle', 'circle' or 'triangle' ")
+
+area = 0.0
+a = float(input("Enter a: "))
+if figure == "square":
+    area = a*a
+elif figure == "rectangle":
+    b = float(input("Enter b: "))
+    area = a*b
+elif figure == "circle":
+    area = math.pi * math.pow(a, 2)
+elif figure == "triangle":
+    h = float(input("Enter h: "))
+    area = (a * h) / 2
+
+print("%.3f" % area)
