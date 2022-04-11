@@ -1,0 +1,7 @@
+currencies = { "BGN" : 1, "USD" : 1.79549, "EUR" : 1.95583, "GBP" : 2.53405 }
+
+num = float(input("Enter a sum: "))
+base = input("Converting from: ")
+to = input("Converting into: ")
+result = num * currencies[base] / currencies[to]
+print("The new currency's sum is: %.2f" % result)
