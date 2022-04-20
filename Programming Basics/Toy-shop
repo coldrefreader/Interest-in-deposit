@@ -1,0 +1,29 @@
+holiday_price = float(input())
+puzzles = int(input())
+talking_dolls = int(input())
+plushy_bears = int(input())
+minions = int(input())
+little_trucks = int(input())
+
+total_toy_expenses = puzzles * 2.6 + talking_dolls * 3 + plushy_bears * 4.1 + minions * 8.2 + little_trucks * 2
+total_toy_amount = puzzles + talking_dolls + plushy_bears + minions + little_trucks
+
+
+if total_toy_amount >= 50:
+    total_toy_expenses = total_toy_expenses * 0.75
+    winnings = total_toy_expenses * 0.9
+    if winnings >= holiday_price:
+        leftovers = winnings - holiday_price
+        print(f"Yes! {leftovers:.2f} lv left.")
+    elif winnings < holiday_price:
+        leftovers = holiday_price - winnings
+        print(f"Not enough money! {leftovers:.2f} lv needed.")
+
+elif total_toy_amount < 50:
+    winnings = total_toy_expenses * 0.9
+    if winnings > holiday_price:
+        leftovers = winnings - holiday_price
+        print(f"Yes! {leftovers:.2f} lv left.")
+    elif winnings < holiday_price:
+        leftovers = holiday_price - winnings
+        print(f"Not enough money! {leftovers:.2f} lv needed.")
