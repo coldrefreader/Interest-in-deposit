@@ -1,0 +1,20 @@
+num_amount = int(input())
+first_sum = 0
+second_sum = 0
+num_order = 0
+
+for _ in range(num_amount * 2):
+    new_num = int(input())
+    num_order += 1
+
+    if num_order <= num_amount:
+        first_sum += new_num
+
+    if num_order > num_amount:
+        second_sum += new_num
+
+if first_sum == second_sum:
+    print(f"Yes, sum = {first_sum}")
+else:
+    differ = abs(first_sum - second_sum)
+    print(f"No, diff = {differ}")
